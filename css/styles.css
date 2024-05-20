@@ -123,7 +123,8 @@ img {
     text-shadow: var(--shadow-text);
 }
 
-.nav-close, .nav-toggle {
+.nav-close,
+.nav-toggle {
     display: flex;
     font-size: 1.5rem;
     cursor: pointer;
@@ -145,7 +146,8 @@ img {
     }
 }
 
-.nav-list, .nav-social {
+.nav-list,
+.nav-social {
     display: flex;
 }
 
@@ -209,7 +211,7 @@ img {
     text-shadow: var(--shadow-text);
 }
 
-.home-meat {
+.home-meat  {
     width: 40px;
     position: absolute;
     top: 9rem;
@@ -328,7 +330,8 @@ img {
     text-align: center;
 }
 
-.favorites-cheese-1, .favorites-cheese-2 {
+.favorites-cheese-1,
+.favorites-cheese-2 {
     width: 40px;
     position: absolute;
     opacity: .5;
@@ -357,7 +360,8 @@ img {
     transition: scale .4s, filter .4s;
 }
 
-.favorites-leaf-1, .favorites-leaf-2 {
+.favorites-leaf-1,
+.favorites-leaf-2 {
     width: 70px;
     position: absolute;
     filter: var(--shadow-img);
@@ -423,3 +427,196 @@ img {
 }
 
 /* Banner Styles */
+.banner {
+    padding-top: 3rem;
+}
+
+.banner-container {
+    background-color: var(--second-color);
+    padding: 1rem;
+}
+
+.banner-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.banner-item {
+    color: var(--second-color-dark);
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.banner-item i {
+    font-size: 1.5rem;
+}
+
+.banner-item span {
+    font: var(--small-font-size) var(--second-font);
+}
+
+/* Products */
+.products-container {
+    position: relative;
+    padding-top: 4.5rem;
+}
+
+.products-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 1.5rem;
+    ;
+}
+
+.products-card {
+    position: relative;
+    background-color: var(--first-color-dark);
+    padding: 6.25rem .75rem 1.25rem;
+    border-radius: 1rem;
+    box-shadow: inset var(--shadow-card);
+    z-index: 10;
+}
+
+.products-img {
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    right: 0;
+    width: 100px;
+    margin: 0 auto;
+    filter: var(--shadow-img);
+    transition: transform .4s;
+}
+
+.products-subtitle {
+    font-size: var(--small-font-size);
+}
+
+.products-title {
+    font: var(--font-regular) var(--h2-font-size) var(--second-font);
+    margin-bottom: .5rem;
+}
+
+.products-price {
+    font-family: var(--second-font);
+}
+
+.products-button {
+    position: absolute;
+    right: .75rem;
+    bottom: 1.25rem;
+    outline: none;
+    border: none;
+    background-color: var(--second-color);
+    padding: 4px;
+    border-radius: .25rem;
+    font-size: 1.25rem;
+    color: var(--second-color-dark);
+    box-shadow: inset var(--shadow-button);
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.products-card:hover .products-img {
+    transform: translateY(-.5rem);
+}
+
+.products-crab,
+.products-hamburger,
+.products-cheese {
+    position: absolute;
+    width: 40px;
+    opacity: .5;
+}
+
+.products-crab {
+    top: -2.5rem;
+    left: 0;
+    rotate: 30deg;
+}
+
+.products-hamburger {
+    top: 17rem;
+    right: -1.5rem;
+    rotate: -15deg;
+}
+
+.products-cheese {
+    left: 2rem;
+    right: 0;
+    margin: 0 auto;
+    bottom: 3rem;
+    rotate: 15deg;
+}
+
+/* Contact */
+.contact-container {
+    position: relative;
+    background-color: var(--first-color-darken);
+    padding-top: 3.5rem;
+    border-radius: 3rem;
+    box-shadow: inset var(--shadow-card);
+    overflow: hidden;
+}
+
+.contact-content {
+    padding-top: 1rem;
+    row-gap: 3rem;
+}
+
+.contact-data {
+    text-align: center;
+}
+
+.contact-title {
+    font: var(--font-regular) var(--h2-font-size) var(--second-font);
+    margin-bottom: .5rem;
+}
+
+.contact-social {
+    display: flex;
+    justify-content: center;
+    column-gap: .75rem;
+}
+
+.contact-social a {
+    color: var(--second-color);
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    font-style: normal;
+}
+
+.contact-img {
+    width: 200px;
+    justify-self: center;
+    filter: var(--shadow-img);
+}
+
+.contact-shrimp,
+.contact-crab,
+.contact-meat {
+    position: absolute;
+    width: 40px;
+    opacity: .5;
+}
+
+.contact-shrimp {
+    top: 9rem;
+    right: 1.5rem;
+    rotate: 15deg;
+}
+
+.contact-crab {
+    top: 17rem;
+    left: 1rem;
+    rotate: 15deg;
+}
+
+.contact-meat {
+    right: 2rem;
+    bottom: 11rem;
+    rotate: -15deg;
+}
