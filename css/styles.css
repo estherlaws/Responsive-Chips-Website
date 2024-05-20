@@ -620,3 +620,43 @@ img {
     bottom: 11rem;
     rotate: -15deg;
 }
+
+/* Footer Styles */
+.footer {
+    padding-block: 1.5rem;
+}
+
+.footer-container {
+    row-gap: 2rem;
+}
+
+.footer-logo {
+    color: var(--white-color);
+    font: var(--h1-font-size) var(--second-font);
+    justify-self: center;
+    text-shadow: var(--shadow-text);
+}
+
+.footer-content {
+    text-align: center;
+    font-size: small;
+}
+
+.footer-content a:hover {
+    color: var(--shadow-card)
+}
+
+.footer-copy {
+    grid-column: 1/3;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer-link {
+    color: var(--white-color);
+    transition: color .4s;
+}
+
+.footer-link:hover {
+    color: var(--second-color);
+}
