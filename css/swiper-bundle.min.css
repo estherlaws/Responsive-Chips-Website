@@ -30,14 +30,13 @@
 }
 
 .swiper {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     position: relative;
     overflow: hidden;
     list-style: none;
     padding: 0;
     z-index: 1;
-    display: block
+    display: block;
 }
 
 .swiper-vertical>.swiper-wrapper {
@@ -50,6 +49,8 @@
     height: 100%;
     z-index: 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
     transition-property: transform;
     transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
     box-sizing: content-box
