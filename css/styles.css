@@ -359,7 +359,7 @@ img {
 }
 
 .favorites-img {
-    width: 300px;
+    width: 200px;
     scale: .8;
     transition: scale .4s, filter .4s;
 }
@@ -662,7 +662,7 @@ img {
 }
 
 .footer-link:hover {
-    color: var(--second-color);
+    color: var(--second-color) !important;
 }
 
 /* Scroll Bar */

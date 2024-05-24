@@ -74,3 +74,21 @@ const scrollActive = () => {
   });
 };
 window.addEventListener("scroll", scrollActive)
+
+// Scroll Reveal: Animation
+const sr = ScrollReveal ({
+  origin: "top",
+  distance: "60px",
+  duration: 2000,
+  delay: 150,
+  reset: true, 
+});
+
+sr.reveal(".home-data, .favorites-container, .footer-container");
+sr.reveal(".home-circle, .home-img", {delay: 600, scale: .5});
+sr.reveal(".home-chips-1, .home-chips-2, .home-chips-3",  {delay: 1000, interval: 100});
+sr.reveal(".home-leaf",  {delay: 1200});
+sr.reveal(".home-tomato-1, .home-tomato-2",  {delay: 1400, interval: 100});
+sr.reveal(".care-img, .contact-img",  {origin: "left"});
+sr.reveal(".care-list, .contact-data",  {origin: "right"});
+sr.reveal(".banner-item, .products-card",  {interval: 100});
